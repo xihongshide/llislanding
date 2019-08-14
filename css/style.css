@@ -3,9 +3,12 @@
 body{ 
     position: relative;
     padding-bottom: 100px;
-    background-color: #f3f4ed;
-    margin: auto;
 
+    margin: auto;
+}
+
+.content {
+    background-color: #f3f4ed;
 }
 
 .topAside{
@@ -18,8 +21,6 @@ body{
     bottom: 0;
     top: 0;
     margin: 10px auto;
-    box-shadow: 0 2px 2px 0;
-    width: 300px;
     height: 500px;
     overflow: hidden;
     border-radius: 4px; 
@@ -29,6 +30,7 @@ body{
 .title{
     margin-top: 30px;
     margin-left: 40px;
+    text-align: left;
     color: #808080;
 }
 
@@ -110,19 +112,16 @@ li,ul{
     bottom: 0;
     top: 0;
     border: none;
-    margin:10px auto;
-    box-shadow: 0 2px 2px 0;
-    width: 50px;
-    height: 50px;
+    margin:20px auto;
     overflow: hidden;
     border-radius: 0; 
-    padding: 5px 60px 5px 60px;
+    padding: 20px 15px;
+    background: #a9e8c6;
 }
 
 .nav a{
     font-size: 20px;
     color: #000000;
-    background-color: 0;
     text-decoration: none;
     display: inline-block;
     margin-right: 20px;
@@ -133,16 +132,13 @@ li,ul{
     color: white;
 }
 
-
-
 .detailHead{
-    width: 800px;
+    margin: 20px 0 15px;
+    padding: 10px 0 10px 30px;
     height: 36px;
-    margin-left: 200px;
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    padding: 5px 18px;
     border: none;
     -webkit-border-radius: 12px;
     border-radius: 12px;
@@ -159,15 +155,12 @@ li,ul{
 .detailContent{
     font: normal 16px/normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
     position: relative;
-    margin-left: 230px;
     box-shadow: 0 2px 2px 0;
-    width: 100px;
+    width: 100%;
+    padding: 15px 0 20px 20px;
     overflow: hidden;
     border-radius: 10px; 
     color: black;
-    margin-top: 5px;
-    margin-right: 200px;
-    margin-bottom: 20px;
 }
 .footer{
     position: absolute;
