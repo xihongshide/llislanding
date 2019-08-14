@@ -10,7 +10,7 @@ body{
 
 .topAside{
     font-family: Impact, Charcoal, sans-serif;
-    background-image: url("file:///Users/leon/Desktop/WEB/resume/images/top.png");
+    background-image: url("/images/top.png");
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
@@ -18,8 +18,7 @@ body{
     bottom: 0;
     top: 0;
     margin: 10px auto;
-    box-shadow: 0 2px 2px 0 
-    box-shadow: 0 2px 2px 0 
+    box-shadow: 0 2px 2px 0;
     width: 300px;
     height: 500px;
     overflow: hidden;
@@ -113,8 +112,7 @@ li,ul{
     top: 0;
     border: none;
     margin:10px auto;
-    box-shadow: 0 2px 2px 0 
-    box-shadow: 0 2px 2px 0 
+    box-shadow: 0 2px 2px 0;
     width: 50px;
     height: 50px;
     overflow: hidden;
@@ -163,8 +161,7 @@ li,ul{
     font: normal 16px/normal "Palatino Linotype", "Book Antiqua", Palatino, serif;
     position: relative;
     margin-left: 230px;
-    box-shadow: 0 2px 2px 0 
-    box-shadow: 0 2px 2px 0 
+    box-shadow: 0 2px 2px 0;
     width: 100px;
     overflow: hidden;
     border-radius: 10px; 
