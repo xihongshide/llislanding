@@ -9,35 +9,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> 
 </script>
 <!-- navigate and scroll to a div -->
-<script type="text/javascript">
-    $(document).ready(function(){
-    $('#summary').click(function() {
-        $('html,body').animate({
-            scrollTop:$("#navSum").offset().top},
-            'slow');
-    });
-    $('#skills').click(function() {
-        $('html,body').animate({
-            scrollTop:$("#navSki").offset().top},
-            'slow');
-    });
-    $('#experience').click(function() {
-        $('html,body').animate({
-            scrollTop:$("#navExp").offset().top},
-            'slow');
-    });
-    $('#education').click(function() {
-       $('html,body').animate({
-            scrollTop:$("#navEdu").offset().top},
-            'slow');
-    });
-    $('#social').click(function() {
-        $('html,body').animate({
-            scrollTop:$("#navSoc").offset().top},
-            'slow');
-    });     
-    });
-</script>
 </head>
 <body>
     <div class="topAside">
@@ -206,15 +177,45 @@
         </div>
     </div>
 
-<div class="footer">
-    <div class="wrapper">
-    <div class="heart">
-        <i class="fa fa-heart"></i>
-    </div>
-    <i class="fa fa-code"></i>
-</div>  
+    <div class="footer">
+        <div class="wrapper">
+            <div class="heart">
+                <i class="fa fa-heart"></i>
+            </div>
+            <i class="fa fa-code"></i>
+        </div>
         <p> Made By <a href="mailto:liangli.0311@gmail.com" target="_blank">LLL❣</a> <i class="icon-heart throb" style="color: #d43f57;"></i> Update NOV 10th 2016</p>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#summary').click(function() {
+                $('html,body').animate({
+                        scrollTop:$("#navSum").offset().top},
+                    'slow');
+            });
+            $('#skills').click(function() {
+                $('html,body').animate({
+                        scrollTop:$("#navSki").offset().top},
+                    'slow');
+            });
+            $('#experience').click(function() {
+                $('html,body').animate({
+                        scrollTop:$("#navExp").offset().top},
+                    'slow');
+            });
+            $('#education').click(function() {
+                $('html,body').animate({
+                        scrollTop:$("#navEdu").offset().top},
+                    'slow');
+            });
+            $('#social').click(function() {
+                $('html,body').animate({
+                        scrollTop:$("#navSoc").offset().top},
+                    'slow');
+            });
+        });
+    </script>
 
 </body>
 </html>
