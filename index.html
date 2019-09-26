@@ -4,83 +4,84 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="refresh" content="30">
-        <meta name="description" content="Resume of Leon Liang Li">
+        <meta name="description" content="Portfolio of Liang Li">
+        <title>LLi's Landing</title>
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/07e3d0d8b1.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
 
     <body>
         <div class="content">
-            <div class="topAside container">
-                <div class="title">
-                    <header>Leon Liang Li</header>
-                    <p>Write Code, Change World!</p>
-                </div>
-
-                <aside class="skills">
-                    <li class="skill">
-                        <dd>
-                            <div class="skill-name">JavaScript</div>
-                            <div class="skill-bar-wrap">
-                                <div class="skill-bar" style="width: 100%"></div>
-                                </div>
-                        </dd>
-                        <dd>
-                                <div class="skill-name">HTML</div>
+            <div class="topAside">
+                <img src="images/top.png" alt="">
+                <div class="container">
+                    <aside class="skills-bars">
+                        <div class="title">
+                            <header>Liang Li</header>
+                            <p>Write Code, Change World!</p>
+                        </div>
+                        <div class="skill-bar-container">
+                            <dd>
+                                <div class="skill-name">JavaScript/jQuery</div>
                                 <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 100%"></div>
+                                    <div class="skill-bar" style="width: 100%"><span></span></div>
                                 </div>
-                        </dd>
-                        <dd>
-                                <div class="skill-name">CSS</div>
+                            </dd>
+                            <dd>
+                                <div class="skill-name">HTML/CSS</div>
                                 <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 100%"></div>
+                                    <div class="skill-bar" style="width: 100%"><span></span></div>
                                 </div>
-                        </dd>
-                        <dd>
+                            </dd>
+                            <dd>
+                                <div class="skill-name">ReactJS</div>
+                                <div class="skill-bar-wrap">
+                                    <div class="skill-bar" style="width: 80%"><span></span></div>
+                                </div>
+                            </dd>
+                            <dd>
                                 <div class="skill-name">PHP</div>
                                 <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 80%"></div>
+                                    <div class="skill-bar" style="width: 70%"><span></span></div>
                                 </div>
-                        </dd>
-                        <dd>
-                                <div class="skill-name">Python</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 70%"></div>
-                                </div>
-                        </dd>
-                        <dd>
+                            </dd>
+                            <dd>
                                 <div class="skill-name">Java</div>
                                 <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 65%"></div>
+                                    <div class="skill-bar" style="width: 65%"><span></span></div>
                                 </div>
-                        </dd>
-                    </li>
-                </aside>
+                            </dd>
+                        </div>
+                    </aside>
 
-                <aside class="sidebar1">
-                    <ul>
-                        <li>
-                            <a href="https://" target="_blank">Source code</a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank">Facebook</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/xihongshide/MY.git" target="_blank">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_top">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="mailto:liangli.0311@gmail.com" target="_top">Mail to me</a>
-                        </li>
-                    </ul>
-                </aside>
+                    <aside class="sidebar1">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
+                            </li>
+                        </ul>
+                    </aside>
+                </div>
+
+                <div class="scroll-arrow hidden-xs">
+                    <div class="arrow-container">
+                          <a id="scrollToMain" href="#"><span></span></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="mainContext">
+            <div class="mainContext" id="mainContent">
                 <div class="nav">
                     <div class="container">
                         <a href="#summary" id="summary">Summary</a>
@@ -189,14 +190,12 @@
             </div>
         </div>
 
-        <div class="footer container">
-            <div class="wrapper">
-                <div class="heart">
-                    <i class="fa fa-heart"></i>
-                </div>
-                <i class="fa fa-code"></i>
-            </div>
-            <p> Made By <a href="mailto:liangli.0311@gmail.com" target="_blank">LLL❣</a> <i class="icon-heart throb" style="color: #d43f57;"></i> Update NOV 10th 2016</p>
+        <div class="footer">
+            <p> Made By <a href="mailto:liangli.0311@gmail.com" target="_blank">lli <i class="fa fa-heart"></i></a> <i class="icon-heart throb" style="color: #d43f57;"></i> Update NOV 10th 2016</p>
+        </div>
+
+        <div class="preload" style="display: none">
+            <img src="images/top.png" alt="">
         </div>
 
         <script type="text/javascript">
@@ -224,6 +223,12 @@
                 $('#social').click(function() {
                     $('html,body').animate({
                             scrollTop:$("#navSoc").offset().top},
+                        'slow');
+                });
+
+                $('#scrollToMain').click(function() {
+                    $('html,body').animate({
+                            scrollTop:$("#mainContent").offset().top},
                         'slow');
                 });
             });
