@@ -311,18 +311,18 @@ body {
 
 
 //responsive design
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .topAside {
-        height: 50vh;
+        height: 55vh;
     }
 }
 
-@media (max-width: 530px) {
+@media only screen and (max-width: 530px) {
     .topAside {
-        height: 35vh;
+        height: 60vh;
 
         img {
-            width: 90%;
+            width: 80%;
         }
     }
 }
