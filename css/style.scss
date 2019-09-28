@@ -4,6 +4,10 @@ body {
     background-color: #f3f4ed;
 }
 
+.content {
+    text-align: center;
+}
+
 .topAside {
     font-family: Impact, Charcoal, sans-serif;
     background: #b9e0cc;
@@ -189,6 +193,8 @@ body {
 
 .mainContent {
     display: inline-block;
+    text-align: left;
+    width: 100%;
 
     .nav {
         font-family: Impact, Charcoal, sans-serif;
