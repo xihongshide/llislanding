@@ -14,7 +14,6 @@
     <body>
         <div class="content">
             <div class="topAside">
-                <img src="images/top.png" alt="">
                 <div class="container">
                     <aside class="skills-bars">
                         <div class="title">
@@ -54,11 +53,20 @@
                             </dd>
                         </div>
                     </aside>
-
-
-
-
                 </div>
+                <div class="container welcome-container animation">
+                    <p>
+                        <span>W</span>
+                        <span>E</span>
+                        <span>L</span>
+                        <span>C</span>
+                        <span>O</span>
+                        <span>M</span>
+                        <span>E</span>
+                        <i class="fas fa-code"></i>
+                    </p>
+                </div>
+
 
                 <div class="scroll-arrow hidden-xs">
                     <div class="arrow-container">
@@ -178,31 +186,92 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="social" id="navSoc">
-                        <div class="detailHead">
-                            <header>Social Involvement</header>
-                        </div>
-                        <div class="detailContent">
-                            <p>
-                                Public spirited, being a member of China Youth Volunteer participate in rescue team sponcerd by the Red Cross Society of China during Wen Chuan Earthquake in Mian Yang, Sichuan Province in March 2008
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
 
         <div class="footer">
-            <p> Made By <a href="mailto:liangli.0311@gmail.com" target="_blank">lli <i class="fa fa-heart"></i></a> <i class="icon-heart throb" style="color: #d43f57;"></i> Update NOV 10th 2016</p>
+            <section id="contact">
+
+                <h1 class="section-header">CONTACT</h1>
+
+                <div class="contact-wrapper">
+
+                    <!----------------
+
+                    CONTACT PAGE LEFT
+
+                    ----------------->
+
+                    <form class="form-horizontal" role="form" method="post" action="contact.php">
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+                        <button class="send-button" id="submit" type="submit" value="SEND">
+                            <div class="button">
+                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                            </div>
+
+                        </button>
+
+                    </form>
+
+                    <div class="direct-contact-container">
+                        <div class="social-media-list">
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li>
+                                    <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+                        <p>lli Made By <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> Update NOV 10th 2016</p>
+                        <hr>
+                        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
         </div>
 
         <div class="preload" style="display: none">
             <img src="images/top.png" alt="">
         </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
+
         <script type="text/javascript">
             $(document).ready(function(){
+                $(".welcome-container p span").velocity('transition.expandIn', { opacity: 1, stagger: 240 , "complete": function() {
+                        $(".welcome-container p i").velocity('transition.slideRightIn', { opacity: 1 });
+                }});
+
                 $('#summary').click(function() {
                     $('html,body').animate({
                             scrollTop:$("#navSum").offset().top},
