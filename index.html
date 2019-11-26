@@ -1,320 +1,369 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104681242-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'UA-104681242-1');
-        </script>
-        <meta charset="utf-8">
-        <meta name="description" content="Portfolio of Liang Li">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>LLi's Landing</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/07e3d0d8b1.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    </head>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-104681242-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-    <body>
-        <div class="content">
-            <div class="topAside">
-                <div class="container">
-                    <aside class="skills-bars">
-                        <div class="title">
-                            <header>Liang Li</header>
-                            <p>Write Code, Change World!</p>
-                        </div>
-                        <div class="skill-bar-container">
-                            <dd>
-                                <div class="skill-name">JavaScript/jQuery</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 100%"><span></span></div>
-                                </div>
-                            </dd>
-                            <dd>
-                                <div class="skill-name">HTML/CSS</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 100%"><span></span></div>
-                                </div>
-                            </dd>
-                            <dd>
-                                <div class="skill-name">ReactJS</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 80%"><span></span></div>
-                                </div>
-                            </dd>
-                            <dd>
-                                <div class="skill-name">PHP</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 70%"><span></span></div>
-                                </div>
-                            </dd>
-                            <dd>
-                                <div class="skill-name">Java</div>
-                                <div class="skill-bar-wrap">
-                                    <div class="skill-bar" style="width: 65%"><span></span></div>
-                                </div>
-                            </dd>
-                        </div>
-                    </aside>
-                </div>
-                <div class="container welcome-container animation">
-                    <p>
-                        <span>W</span>
-                        <span>E</span>
-                        <span>L</span>
-                        <span>C</span>
-                        <span>O</span>
-                        <span>M</span>
-                        <span>E</span>
-                        <i class="fas fa-code"></i>
-                    </p>
-                </div>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
+        gtag('config', 'UA-104681242-1');
+    </script>
+    <meta charset="utf-8">
+    <meta name="description" content="Portfolio of Liang Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLi's Landing</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/07e3d0d8b1.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_F8QEhEnKQp2iFas9nJ735");
+       })();
+    </script>
+</head>
 
-                <div class="scroll-arrow hidden-xs">
-                    <div class="arrow-container">
-                          <a id="scrollToMain" href="#"><span></span></a>
+<body>
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="#" id="summary">Summary</a>
+                <a href="#" id="skills">Technical Skills</a>
+                <a href="#" id="experience">Peofesional Experience</a>
+                <a href="#" id="education">Education</a>
+          </div>
+        </nav>
+
+        <div class="topAside">
+            <div class="container">
+                <aside class="skills-bars">
+                    <div class="title">
+                        <header>Liang Li</header>
+                        <p>Write Code, Change World!</p>
                     </div>
-                </div>
+                    <div class="skill-bar-container">
+                        <dd>
+                            <div class="skill-name">JavaScript/jQuery</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 100%"><span></span></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">HTML/CSS</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 100%"><span></span></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">ReactJS</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 90%"><span></span></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">PHP</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 70%"><span></span></div>
+                            </div>
+                        </dd>
+                        <dd>
+                            <div class="skill-name">python</div>
+                            <div class="skill-bar-wrap">
+                                <div class="skill-bar" style="width: 75%"><span></span></div>
+                            </div>
+                        </dd>
+                    </div>
+                </aside>
+            </div>
+            <div class="container welcome-container animation">
+                <p>
+                    <span>W</span>
+                    <span>E</span>
+                    <span>L</span>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>M</span>
+                    <span>E</span>
+                    <i class="fas fa-code"></i>
+                </p>
             </div>
 
-            <div class="linkIcons">
-                <ul>
-                    <li>
-                        <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                        <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
-                    </li>
-                </ul>
-            </div>
 
-            <div class="mainContent" id="mainContent">
-                <div class="nav">
-                    <div class="container">
-                        <a href="#summary" id="summary">Summary</a>
-                        <a href="#skills" id="skills">Technical Skills</a>
-                        <a href="#experience" id="experience">Peofesional Experience</a>
-                        <a href="#education" id="education">Education</a>
-                        <a href="#social" id="social">Social Involvement</a>
+            <div class="scroll-arrow hidden-xs">
+                <div class="arrow-container">
+                    <a id="scrollToMain" href="#"><span></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="linkIcons">
+            <ul>
+                <li>
+                    <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mainContent" id="mainContent">
+
+            <div class="container">
+                <div class="summary" id="navSum">
+                    <div class="detailHead">
+
+                        <head>Summary</head>
+                    </div>
+                    <div class="detailContent">
+                        <p>I am a passionate software engineer with years of professional experience building web applications.
+                        </p>
+                    </div>
+                </div>
+                <div class="skills" id="navSki">
+                    <div class="detailHead">
+                        <header>Technical Skills</header>
+                    </div>
+                    <div class="detailContent">
+                        <li> <strong> Programming Language:</strong> Javascript, & Python</li>
+                        <li><strong>Markup & Format:</strong>HTML/HTML5, CSS&CSS3, XML, & JASON</li>
+                        <li><strong>Database Systemn:</strong> Experience with MySQL </li>
+                        <li><strong>Libarary & Framework:</strong> jQuery, AngularJS, Node.js, & Ruby on Rails</li>
+                        <li><strong>Tools:</strong> GitHub, Sublime Text, & Eclipse IDE </li>
+                    </div>
+                </div>
+                <div class="experience" id="navExp">
+                    <div class="detailHead">
+                        <header>Profesional Experience</header>
+                    </div>
+                    <div class="detailContent">
+                        <div class="time">Feb 2015 - Present
+                        </div>
+                        <div class="conpany">Capital International Academy<span class="location">-1415 Woodroffe Ave, Ottawa, ON, Canada</span>
+                        </div>
+                        <p class="description">Capital International Academy is a startup Highschool, which also provide private education services. I work as a teacher and manager in the English Department. My work include:
+                            <li>Prepare for lectures, including Reading and writing.</li>
+                            <li>Give lectures 20 hours per week.</li>
+                            <li>Give feedback to students’ their assignment and performance.</li>
+                            <li>Interview tutors and train new tutors.</li>
+                            <li>Schedule lectures for tutors.</li>
+                        </p>
+                    </div>
+                    <div class="detailContent">
+                        <div class="time">Jan 2011 - 2013</div>
+                        <div class="company"> New Oriental Education & Technology Group Inc.<span class="location"> -Taiyuan, Shanxi, Chian</span></div>
+                        <p class="description">New Oriental is the largest provider of private educational services in China. I work as a teacher giving courses of writing and reading and participate in the promotion of Online Course Program.
+                            <li>Preparing lessons for small-scale classes with 6 to 25 students. </li>
+                            <li>Teaching Academic writing and Reading English inclass or online.</li>
+                            <li>Participating in Standardization Course Innovation Program (Traditionally teachers prepare and give courses by using a unified system, which is inflexible and not widely accept by students. After the innovation,
+                                teacher styles are building depends on different types of students. By Analyzing the feedbacks and evaluations, our program was promoted to other New Oriental campuses) </li>
+                        </p>
+                    </div>
+                    <div class="detailContent">
+                        <div class="time">Jun 2012 - Jul 2013</div>
+                        <div class="company">NEUSOFT<span class="location">-Shenyang, Liao Ning, Chian</span></div>
+                        <p class="description">Neusoft is on of the the world's top five hundred enterprises providing outsoucing service. I worked as a key member of its mobile website development team. My work involves using multiple programming
+                            languages such as JavaScript, HTML and CSS, and libraries like Backbone, Stripe and Parse.
+                            <li> Implemented UI design using HTML and CSS.</li>
+                            <li>Provided multi-language support using i18n library.</li>
+                            <li>Developed payment gateway using Backbone, Stripe and Parse.</li>
+                            <li>Designed and built signup and login pages using HTML and JavaScript and used Parse to save user information on the cloud.</li>
+                        </p>
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="summary" id="navSum">
-                        <div class="detailHead">
-                            <head>Summary</head>
-                        </div>
-                        <div class="detailContent">
-                            <p>I am a passionate software engineer with years of professional experience building web applications.
-                            </p>
+                <div class="education" id="navEdu">
+                    <div class="detailHead">
+                        <header>Education</header>
+                    </div>
+                    <div class="detailContent">
+                        <div class="time">Sep 2009 - Jul 2013</div>
+                        <div class="School">North Univercity of China<span class="location">-Taiyuan, Shanxi, Chian</span></div>
+                        <div>
+                            <li class="degree"><strong>Degree:</strong>Bachelor Degree of Engineering</li>
+                            <li class="major"><strong>Major:</strong>Network Engineering</li>
+                            <li class="gpa"><strong>GPA:</strong>3.5(out of 4)</li>
                         </div>
                     </div>
-                    <div class="skills" id="navSki">
-                        <div class="detailHead">
-                            <header>Technical Skills</header>
-                        </div>
-                        <div class="detailContent">
-                            <li> <strong> Programming Language:</strong> Java, Javascript, & Python</li>
-                            <li><strong>Markup & Format:</strong>HTML/HTML5, CSS&CSS3, XML, & JASON</li>
-                            <li><strong>Database Systemn:</strong> Experience with MySQL </li>
-                            <li><strong>Libarary & Framework:</strong> jQuery, AngularJS, Node.js, & Ruby on Rails</li>
-                            <li><strong>Tools:</strong> GitHub, Sublime Text, & Eclipse IDE  </li>
-                        </div>
-                    </div>
-                    <div class="experience" id="navExp">
-                        <div class="detailHead">
-                            <header>Profesional Experience</header>
-                        </div>
-                        <div class="detailContent">
-                            <div class="time">Feb 2015 - Present
-                            </div>
-                            <div class="conpany">Capital International Academy<span class="location">-1415 Woodroffe Ave, Ottawa, ON, Canada</span>
-                            </div>
-                            <p class="description">Capital International Academy is a startup Highschool, which also provide private education services. I work as a teacher and manager in the English Department. My work include:
-                                <li>Prepare for lectures, including Reading and writing.</li>
-                                <li>Give lectures 20 hours per week.</li>
-                                <li>Give feedback to students’ their    assignment and performance.</li>
-                                    <li>Interview tutors and train new tutors.</li>
-                                <li>Schedule lectures for tutors.</li>
-                            </p>
-                        </div>
-                        <div class="detailContent">
-                            <div class="time">Jan 2011 - 2013</div>
-                            <div class="company"> New Oriental Education & Technology Group Inc.<span class="location"> -Taiyuan, Shanxi, Chian</span></div>
-                            <p class="description">New Oriental is the largest provider of private educational services in China. I work as a teacher giving courses of writing and reading and participate in the promotion of Online Course Program.
-                                <li>Preparing lessons for small-scale classes with 6 to 25 students. </li>
-                                <li>Teaching Academic writing and Reading English inclass or online.</li>
-                                <li>Participating in Standardization Course Innovation Program (Traditionally teachers prepare and give courses by using a unified system, which is inflexible and not widely accept by students. After the innovation, teacher styles are building depends on different types of students. By Analyzing the feedbacks and evaluations, our program was promoted to other New Oriental campuses) </li>
-                            </p>
-                        </div>
-                        <div class="detailContent">
-                            <div class="time">Jun 2012 - Jul 2013</div>
-                            <div class="company">NEUSOFT<span class="location">-Shenyang, Liao Ning, Chian</span></div>
-                            <p class="description">Neusoft is on of the the world's top five hundred enterprises providing outsoucing service. I worked as a key member of its mobile website development team. My work involves using multiple programming languages such as JavaScript, HTML and CSS, and libraries like Backbone, Stripe and Parse.
-                                <li> Implemented UI design using HTML and CSS.</li>
-                                <li>Provided multi-language support using i18n library.</li>
-                                <li>Developed payment gateway using Backbone, Stripe and Parse.</li>
-                                <li>Designed and built signup and login pages using HTML and JavaScript and used Parse to save user information on the cloud.</li>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="education" id="navEdu">
-                        <div class="detailHead">
-                            <header>Education</header>
-                        </div>
-                        <div class="detailContent">
-                            <div class="time">Sep 2009 - Jul 2013</div>
-                            <div class="School">North Univercity of China<span class="location">-Taiyuan, Shanxi, Chian</span></div>
-                            <div>
-                                <li class="degree"><strong>Degree:</strong>Bachelor Degree of Engineering</li>
-                                <li class="major"><strong>Major:</strong>Network Engineering</li>
-                                <li class="gpa"><strong>GPA:</strong>3.5(out of 4)</li>
-                            </div>
-                        </div>
-                        <div class="detailContent">
-                            <div class="time">Sep 2014 - May 2016</div>
-                            <div class="School">Carleton Univercity<span class="location">-Ottawa, ON, Canada</span></div>
-                            <div>
-                                <li class="degree"><strong>Degree:</strong>Master of Engineering(EMeng)</li>
-                                <li class="major"><strong>Major:</strong>Electrical & Computer Engineering(ECE)</li>
-                                <li class="gpa"><strong>GPA:</strong>10.5(out of 12)</li>
-                            </div>
+                    <div class="detailContent">
+                        <div class="time">Sep 2014 - May 2016</div>
+                        <div class="School">Carleton Univercity<span class="location">-Ottawa, ON, Canada</span></div>
+                        <div>
+                            <li class="degree"><strong>Degree:</strong>Master of Engineering(EMeng)</li>
+                            <li class="major"><strong>Major:</strong>Electrical & Computer Engineering(ECE)</li>
+                            <li class="gpa"><strong>GPA:</strong>10.5(out of 12)</li>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="footer">
-            <section id="contact">
+    <div class="footer">
+        <section id="contact">
 
-                <h1 class="section-header">CONTACT</h1>
+            <h1 class="section-header">CONTACT</h1>
 
-                <div class="contact-wrapper">
+            <div class="contact-wrapper row">
 
-                    <!----------------
+                <form id="contactFrom" class="form-horizontal col-xs-12 col-sm-6 col-md-6" role="form" method="post" action="contact.php">
 
-                    CONTACT PAGE LEFT
-
-                    ----------------->
-
-                    <form class="form-horizontal" role="form" method="post" action="contact.php">
-
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
-                            </div>
-                        </div>
-
-                        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-
-                        <button class="send-button" id="submit" type="submit" value="SEND">
-                            <div class="button">
-                                <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                            </div>
-
-                        </button>
-
-                    </form>
-
-                    <div class="direct-contact-container">
-                        <div class="social-media-list">
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                                <li>
-                                    <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <hr>
-                        <p>lli Made By <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> Update NOV 10th 2016</p>
-                        <hr>
-                        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
                     </div>
 
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                    </div>
+
+                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+                    <button class="send-button" id="submit" type="submit" value="SEND">
+                        <div class="button">
+                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                        </div>
+
+                    </button>
+
+                </form>
+
+                <div class="direct-contact-container col-xs-12 col-sm-6 col-md-6">
+                    <div class="social-media-list">
+                        <ul>
+                            <li>
+                                <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+                    <p>lli Made By <i class="fa fa-heart"></i> & <i class="fa fa-coffee"></i> Update NOV 10th 2016</p>
+                    <hr>
+                    <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
                 </div>
 
-            </section>
+            </div>
+
+        </section>
 
 
-        </div>
+    </div>
 
-        <div class="preload" style="display: none">
-            <img src="images/top.png" alt="">
-        </div>
+    <div class="preload" style="display: none">
+        <img src="images/top.png" alt="">
+    </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                $(".welcome-container p span").velocity('transition.expandIn', { opacity: 1, stagger: 240 , "complete": function() {
-                        $(".welcome-container p i").velocity('transition.slideRightIn', { opacity: 1 });
-                }});
-
-                $('#summary').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#navSum").offset().top},
-                        'slow');
-                });
-                $('#skills').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#navSki").offset().top},
-                        'slow');
-                });
-                $('#experience').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#navExp").offset().top},
-                        'slow');
-                });
-                $('#education').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#navEdu").offset().top},
-                        'slow');
-                });
-                $('#social').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#navSoc").offset().top},
-                        'slow');
-                });
-
-                $('#scrollToMain').click(function() {
-                    $('html,body').animate({
-                            scrollTop:$("#mainContent").offset().top},
-                        'slow');
-                });
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".welcome-container p span").velocity('transition.expandIn', {
+                opacity: 1,
+                stagger: 240,
+                "complete": function() {
+                    $(".welcome-container p i").velocity('transition.slideRightIn', {
+                        opacity: 1
+                    });
+                }
             });
-        </script>
 
-    </body>
+            $('#summary').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#navSum").offset().top
+                    },
+                    'slow');
+            });
+            $('#skills').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#navSki").offset().top
+                    },
+                    'slow');
+            });
+            $('#experience').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#navExp").offset().top
+                    },
+                    'slow');
+            });
+            $('#education').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#navEdu").offset().top
+                    },
+                    'slow');
+            });
+            $('#social').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#navSoc").offset().top
+                    },
+                    'slow');
+            });
+
+            $('#scrollToMain').click(function() {
+                $('html,body').animate({
+                        scrollTop: $("#mainContent").offset().top
+                    },
+                    'slow');
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var myform = $("form#contactFrom");
+            myform.submit(function(event){
+            event.preventDefault();
+
+            // Change to your service ID, or keep using the default service
+            var service_id = "default_service";
+            var template_id = "template_mjHNK6qZ";
+
+            myform.find("button .send-text").text("Sending...");
+            emailjs.sendForm(service_id,template_id,myform[0]).then(function(){
+                alert("Sent!");
+                myform.find("button .send-text").text("Send");
+            }, function(err) {
+                alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+                myform.find("button .send-text").text("Send");
+            });
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
 </html>
