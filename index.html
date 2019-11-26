@@ -233,22 +233,20 @@
                 <form id="contactFrom" class="form-horizontal col-xs-12 col-sm-6 col-md-6" role="form" method="post" action="contact.php">
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                        <input type="text" class="form-control" id="input_name" placeholder="NAME" name="name" value="" required minlength=3>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                        <input type="email" class="form-control" id="input_email" placeholder="EMAIL" name="email" value="" required minlength=8>
                     </div>
 
-                    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+                    <textarea class="form-control" id="input_message" rows="10" placeholder="MESSAGE" name="message" required required minlength=10></textarea>
 
-                    <button class="send-button" id="submit" type="submit" value="SEND">
+                    <button class="send-button" id="input_submit" type="submit" value="SEND">
                         <div class="button">
                             <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
                         </div>
-
                     </button>
-
                 </form>
 
                 <div class="direct-contact-container col-xs-12 col-sm-6 col-md-6">
@@ -345,22 +343,28 @@
         $(document).ready(function() {
             var myform = $("form#contactFrom");
             myform.submit(function(event){
-            event.preventDefault();
+                event.preventDefault();
 
-            // Change to your service ID, or keep using the default service
-            var service_id = "default_service";
-            var template_id = "template_mjHNK6qZ";
-
-            myform.find("button .send-text").text("Sending...");
-            emailjs.sendForm(service_id,template_id,myform[0]).then(function(){
-                alert("Sent!");
-                myform.find("button .send-text").text("Send");
-            }, function(err) {
-                alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-                myform.find("button .send-text").text("Send");
-            });
-                return false;
-            });
+                var contactFromData= {
+                    service_id: 'llislanding',
+                    template_id: 'template_mjHNK6qZ',
+                    template_params: {
+                        name: $("#input_name").val(),
+                        email: $("#input_email").val(),
+                        message: $("#input_message").val()
+                    }
+                };
+                
+                myform.find("button .send-text").text("Sending...");
+                emailjs.sendForm(contactFromData.service_id, contactFromData.template_id, contactFromData).then(function(){
+                    console.log("message send");
+                    myform.find("button .send-text").text("Send");
+                }, function(err) {
+                    console.log("error...");
+                    myform.find("button .send-text").text("Send");
+                });
+                    return false;
+                });
         });
     </script>
 
