@@ -360,18 +360,18 @@
                 emailjs.send(contactFromData.service_id, contactFromData.template_id, contactFromData.template_params, 'user_F8QEhEnKQp2iFas9nJ735').then(function(){
                     setTimeout(function(){
                         myform.find(".send-text").text("send");
-                    }, 1500)
+                    }, 2000)
 
                     setTimeout(function(){
                         myform.find(".send-text").text("");
                         myform.find(".send-button i").fadeIn(1000);
-                    }, 2000)
+                    }, 4000)
 
                 }, function(err) {
                     setTimeout(function(){
                         myform.find(".send-text").text("");
                         myform.find(".send-button i").fadeIn(1000);
-                    }, 1500)
+                    }, 2500)
                     myform.find(".send-button .send-text").text("").append("<p>" + err + "</p>");
                 });
                     return false;
