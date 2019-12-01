@@ -343,8 +343,6 @@
             var myform = $("form#contactFrom");
             myform.submit(function(event){
                 event.preventDefault;
-                console.log("test");
-                myform.find(".send-button i").fadeOut(500)
 
                 var contactFromData= {
                     service_id: 'llislanding',
@@ -356,15 +354,24 @@
                     }
                 };
 
-                myform.find(".send-button i").fadeOut(500)
-                myform.find(".send-button .send-text").fadeIn(500).text("Sending...");
+                myform.find(".send-button i").fadeOut(100, function(){
+                    myform.find(".send-button .send-text").fadeIn(1200).text("Sending...");
+                })
                 emailjs.send(contactFromData.service_id, contactFromData.template_id, contactFromData.template_params, 'user_F8QEhEnKQp2iFas9nJ735').then(function(){
                     setTimeout(function(){
+                        myform.find(".send-text").text("send");
+                    }, 1500)
+
+                    setTimeout(function(){
                         myform.find(".send-text").text("");
-                        myform.find(".send-button i").fadeIn(500);
-                    })
+                        myform.find(".send-button i").fadeIn(1000);
+                    }, 2000)
+
                 }, function(err) {
-                    myform.find(".send-button i").fadeIn(500);
+                    setTimeout(function(){
+                        myform.find(".send-text").text("");
+                        myform.find(".send-button i").fadeIn(1000);
+                    }, 1500)
                     myform.find(".send-button .send-text").text("").append("<p>" + err + "</p>");
                 });
                     return false;
