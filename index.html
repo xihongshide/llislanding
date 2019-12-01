@@ -21,6 +21,7 @@
     <title>LLi's Landing</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -243,9 +244,7 @@
                     <textarea class="form-control" id="input_message" rows="10" placeholder="MESSAGE" name="message" required required minlength=10></textarea>
 
                     <button class="send-button" id="input_submit" type="submit" value="SEND">
-                        <div class="button">
-                            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-                        </div>
+                        <i class="fa fa-paper-plane"></i><span class="send-text"></span>
                     </button>
                 </form>
 
@@ -256,10 +255,10 @@
                                 <a href="https://github.com/xihongshide/MY.git" target="_blank"><i class="fab fa-github"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/profile.php?id=100008402794110" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/l.liiiiii/" target="_blank"><i class="fab fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a href="https://ca.linkedin.com/in/leon-li-6b7756b3" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/lli-liangli" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                             <li>
                                 <a href="mailto:liangli.0311@gmail.com" target="_top"><i class="fa fa-paper-plane"></i></a>
@@ -343,7 +342,9 @@
         $(document).ready(function() {
             var myform = $("form#contactFrom");
             myform.submit(function(event){
-                event.preventDefault();
+                event.preventDefault;
+                console.log("test");
+                myform.find(".send-button i").fadeOut(500)
 
                 var contactFromData= {
                     service_id: 'llislanding',
@@ -354,14 +355,17 @@
                         message: $("#input_message").val()
                     }
                 };
-                
-                myform.find("button .send-text").text("Sending...");
-                emailjs.sendForm(contactFromData.service_id, contactFromData.template_id, contactFromData).then(function(){
-                    console.log("message send");
-                    myform.find("button .send-text").text("Send");
+
+                myform.find(".send-button i").fadeOut(500)
+                myform.find(".send-button .send-text").fadeIn(500).text("Sending...");
+                emailjs.send(contactFromData.service_id, contactFromData.template_id, contactFromData.template_params, 'user_F8QEhEnKQp2iFas9nJ735').then(function(){
+                    setTimeout(function(){
+                        myform.find(".send-text").text("");
+                        myform.find(".send-button i").fadeIn(500);
+                    })
                 }, function(err) {
-                    console.log("error...");
-                    myform.find("button .send-text").text("Send");
+                    myform.find(".send-button i").fadeIn(500);
+                    myform.find(".send-button .send-text").text("").append("<p>" + err + "</p>");
                 });
                     return false;
                 });

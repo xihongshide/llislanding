@@ -357,35 +357,35 @@ $main-white: #fff;
     height: 34px;
     width: 100%;
     overflow: hidden;
-    background: transparent;
+    background: #222222;
     transition: all .2s ease-in-out;
     padding: 0;
     border: none;
-}
-
-.button {
-    width: 100%;
-    height: 34px;
-    background: #222222;
-    transition: all .2s ease-in-out;
+    border: 2px solid #222222;
 
     i {
         color: #fff;
         line-height: 34px;
+        transition: all .5s linear;
+    }
+
+    &:hover {
+        background: transparent;
+
+        i {
+            color: #222222;
+        }
     }
 }
 
 .send-text {
-    display: block;
     margin-top: 10px;
     line-height: 34px;
     font: 300 14px 'Lato', sans-serif;
     letter-spacing: 2px;
     color: #fff;
-}
-
-.button:hover {
-    transform: translate3d(0px, -34px, 0px);
+    transition: all .5s linear;
+    display: none;
 }
 
 /* Begin Right Contact Page */
@@ -477,6 +477,7 @@ $main-white: #fff;
 .social-media-list li:after {
     content: '';
     position: absolute;
+    pointer-events: none;
     top: 0;
     left: 0;
     width: 70px;
